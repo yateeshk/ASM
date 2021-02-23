@@ -3,6 +3,7 @@ kind: K8sPSPFSGroup
 metadata:
   name: k8spspfsgroup
 spec:
+  enforcementAction: dryrun
   match:
     kinds:
       - apiGroups: [""]

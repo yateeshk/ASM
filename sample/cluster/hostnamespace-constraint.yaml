@@ -3,10 +3,11 @@ kind: K8sPSPHostNamespace
 metadata:
   name: psp-host-namespace
 spec:
+  enforcementAction: dryrun
   match:
     kinds:
       - apiGroups: [""]
         kinds: ["Pod"]
       - namespaceselector:
-              matchExpressions:
-                      - { key: pod_security, operator: notIn, values: [exempt] }
+          matchExpressions:
+            - { key: pod_security, operator: notIn, values: [exempt] }

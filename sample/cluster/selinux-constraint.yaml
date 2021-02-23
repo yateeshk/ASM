@@ -3,6 +3,7 @@ kind: K8sPSPSELinux
 metadata:
   name: k8spspselinux
 spec:
+  enforcementAction: dryrun
   match:
     kinds:
       - apiGroups: [""]

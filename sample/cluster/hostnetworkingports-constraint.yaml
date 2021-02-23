@@ -3,15 +3,16 @@ kind: K8sPSPHostNetworkingPorts
 metadata:
   name: psp-host-network-ports
 spec:
+  enforcementAction: dryrun
   match:
     kinds:
       - apiGroups: [""]
         kinds: ["Pod"]
       - namespaceselector:
-              matchExpressions:
-                      - { key: pod_security, operator: notIn, values: [exempt] }
+          matchExpressions:
+            - { key: pod_security, operator: notIn, values: [exempt] }
   parameters:
-     hostNetwork: false
+    hostNetwork: false
 #    hostnetwork: true
 #    min: 80
 #    max: 9000
