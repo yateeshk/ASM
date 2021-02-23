@@ -1,6 +1,6 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
-kind: K8sPrivilegedContainer
-#kind: K8sPSPPrivilegedContainer
+#kind: K8sPrivilegedContainer
+kind: K8sPSPPrivilegedContainer
 metadata:
   name: privileged-container
 spec:
