@@ -1,0 +1,2 @@
+#test.yaml
+#The clusterregistry/ directory is optional, and contains configs for ClusterSelectors. ClusterSelectors limit which clusters a config applies to, and are referenced in configs found in the cluster/ and nam#espaces/ directories.
