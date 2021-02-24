@@ -8,7 +8,7 @@ spec:
     kinds:
       - apiGroups: [""]
         kinds: ["Namespace"]
-    excludedNamespaces: ["test", "test2", "test3*"]
+    excludedNamespaces: ["test", "test2"]
   parameters:
     labels:
       - key: "Label-name-required"
