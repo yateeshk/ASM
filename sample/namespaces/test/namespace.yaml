@@ -1,12 +1,5 @@
 # create namespace named "test"
-#apiVersion: v1
-#kind: Namespace
-#metadata:
-#  name: test
-# create namespace named "test"
 apiVersion: v1
 kind: Namespace
 metadata:
   name: test
-  labels:
-   "Label-name-required": "mylabel"
