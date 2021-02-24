@@ -3,7 +3,7 @@ kind: K8sRequiredLabels
 metadata:
   name: ns-must-have-label
 spec:
-  enforcementAction: dryrun
+#  enforcementAction: dryrun
   match:
     kinds:
       - apiGroups: [""]
